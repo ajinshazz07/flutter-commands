@@ -2,3 +2,7 @@ app name and id changing cmd
 -----------------------------
 1, rename --version
 2,rename set BundleId --value.com."name"
+
+SHA code , fingerprint  command 
+-------------------------------
+keytool -list -v -alias androiddebugkey -keystore ~/.android/debug.keystore -storepass android -keypass android
