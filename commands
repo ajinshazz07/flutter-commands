@@ -1,7 +1,8 @@
 app name and id changing cmd 
 -----------------------------
-1, rename --version
-2,rename set BundleId --value.com."name"
+1, flutter pub global activate rename
+2, rename setAppName --targets ios,android,web,macos,windows,linux --value "Your New Name"
+
 
 SHA code , fingerprint  command 
 -------------------------------
