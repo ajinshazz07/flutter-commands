@@ -4,6 +4,34 @@ app name and id changing cmd
 2, rename setAppName --targets ios,android,web,macos,windows,linux --value "Your New Name"
 
 
+
+
+
+
+
 SHA code , fingerprint  command 
 -------------------------------
 keytool -list -v -alias androiddebugkey -keystore ~/.android/debug.keystore -storepass android -keypass android
+
+
+
+
+
+
+==============================
+edited code git deployment 
+==============================
+# --- 1. Push Source Code ---
+git add .
+git commit -m "Update portfolio"
+git push origin source
+
+# --- 2. Compile Web Build ---
+flutter build web --no-tree-shake-icons
+
+# --- 3. Deploy to Live Site ---
+cd build/web
+git add .
+git commit -m "Deploy latest build"
+git push origin main
+cd ../..
